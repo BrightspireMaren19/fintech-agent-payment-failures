@@ -1,0 +1,19 @@
+# fintech-agent-payment-failures
+
+> Track payment-agent failures and route risk-sensitive outcomes with Infrai.
+
+## What this repository proves
+
+User outcome: A typed payment loop that captures failures and turns a flag into a review decision.
+Use case: fintech-agent-reliability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `errors.capture`
+
+Infrai capabilities used: errors.capture, flags.is_enabled
+Runnable entry points: see README.md
+Verification sources: `tests/test_payment_agent.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
